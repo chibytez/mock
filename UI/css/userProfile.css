@@ -20,7 +20,8 @@ html, body {
 .main{
     grid-area: m;
     background-color: rgb(20, 3, 65);
-    color: #fdfcf7;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    color: #fdfcf7;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 }
 
 .profile{
@@ -29,7 +30,8 @@ html, body {
 }
 
 .user-photo{
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 80px;
     height: 80px;
     background: #E6E7ED;
@@ -40,8 +42,7 @@ html, body {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     overflow: hidden;
-    margin-top: 20%;
-    margin-left:40%;
+    margin: auto;
   
 }
 div.user-photo>img {
@@ -59,7 +60,6 @@ div.user-photo>img {
   display: grid;
   flex-direction: column; 
   padding-left: 15%;  
-  opacity:0.87;
     padding:10px 20px;
     text-decoration:none;
     color: #E6E7ED;
@@ -136,4 +136,8 @@ div.user-photo>img {
     background: rgb(245, 243, 240);  
     width: 100%;
   
+   }
+
+   .spacer{
+       margin-top:25%;
    }
