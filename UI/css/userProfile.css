@@ -58,9 +58,9 @@ div.user-photo>img {
 
  .pages> a{
   display: grid;
-  flex-direction: column; 
-  padding-left: 15%;  
+  flex-direction: column;  
     padding:10px 20px;
+    margin-right: 50%;
     text-decoration:none;
     color: #E6E7ED;
  }
@@ -103,9 +103,7 @@ div.user-photo>img {
    }
 
    .edit{
-    text-align: center;
-    width:5%;
-    margin-left:2em; 
+    width:40px;
     height: 30px;
     color: white;
     background-color: rgb(41, 5, 38);
@@ -114,13 +112,13 @@ div.user-photo>img {
    }
 
    .update{
-    text-align: center;
-    width:10%;
+    width:60px;
     height: 30px;
     color: rgb(179, 175, 175);
     background-color: rgb(247, 247, 247);
     border: 1px solid rgb(218, 205, 205);
     border-radius: 0.3em;
+    margin-left: 2%;
    }
 
    div.form p{
