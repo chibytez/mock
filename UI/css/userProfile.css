@@ -1,3 +1,4 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 html, body {
     box-sizing: border-box;
     background-color: #fdfcf7;
@@ -28,29 +29,11 @@ html, body {
     grid-area: s;
     background-color: rgba(222, 228, 228, 0.514);
 }
-
-.user-photo{
-    display: flex;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-    background: #E6E7ED;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    overflow: hidden;
-    margin: auto;
-  
+div.main h1 {
+  display: grid;
+  justify-content: center;
 }
-div.user-photo>img {
-    max-height: 100%;
-    max-width: 100%;
- }
-
- div.main p{
+div.main p{
      display: grid;
      justify-content: center;
      margin-top: 15%;
@@ -109,6 +92,7 @@ div.user-photo>img {
     background-color: rgb(41, 5, 38);
     border: 1px solid rgb(218, 205, 205);
     border-radius: 0.3em;
+    margin-left:3%;
    }
 
    .update{
@@ -138,4 +122,133 @@ div.user-photo>img {
 
    .spacer{
        margin-top:25%;
+   }
+
+   .main > #check, .menu-icon  {
+    display:none
+  }
+   @media(max-width: 550px) {
+  
+ .main{
+    display:inline-block;
+    position:absolute;
+    right:0;
+    top:0; 
+    width: 100%;
+    background-color: rgb(20, 3, 65);
+ }
+
+ .spacer{
+  margin-top:0;
+}
+
+    .main > .spacer{
+        display:inline-block;
+        position:relative;
+        right:0;
+        top:0;
+}
+
+.main > .spacer > label {
+    display:inline-block;
+    padding:13px;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  .main > .spacer > label:hover {
+    background-color:rgba(0,0,0,0.3)
+  }
+  .main > .spacer > label > span {
+    border-top:2px solid white;
+    display:block;
+    height:7px;
+    width:25px
+  }
+
+  div.main h1{
+    display:none;
+    height: 0;
+
+  }
+
+  div.main p{
+    display: none;
+    height: 0;
+  }
+
+  .main > .pages {
+    background-color:white;
+    color: black;
+    display:block;
+    height:0;
+    left:0;
+    overflow-y:hidden;
+    position:absolute;
+    top:50px;
+    transition:all .3s ease-in;
+    width:100%
+  }
+  .main > .pages > a {
+    display:block;
+    width:100%;
+    color: #4f4f4f;
+  }
+
+  div.pages a:hover{
+    color: black; 
+    background: rgb(245, 243, 240);  
+    width: 100%;
+  
+   }
+  .main > #check:not(:checked) + .pages {
+    position: relative;
+    top: 0;
+    height:0
+  }
+
+  .main > #check:checked + .pages{
+    height:auto;
+    overflow-y:auto
+  }
+ 
+
+  .active {
+    border:none;
+    display:hidden
+  }
+
+  .mob-active {
+    border:1px solid #fff;
+    display:block;
+    padding:10px 20px
+  }
+
+  .box {
+    float:none;
+    text-align:center;
+    width:100%
+  }
+
+  .container{
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    " m m m m m m m m m m m m "
+    " s s s s s s s s s s s s "
+}
+
+.edit{
+  width:40px;
+  height: 30px;
+  color: white;
+  background-color: rgb(41, 5, 38);
+  border: 1px solid rgb(218, 205, 205);
+  border-radius: 0.3em;
+  margin-left:7%;
+ }
    }
